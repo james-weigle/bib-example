@@ -20,9 +20,10 @@ minima:
 
 # Minima: custom header links
 header_pages:
-  - _pages/frontpage.md
-  - _pages/about.md
+  - _pages/ethics.md
+  - _pages/jobs.md
   - _pages/archive.md
+  - _pages/publications.md
 
 include:
     - _pages

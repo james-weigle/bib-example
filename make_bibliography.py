@@ -11,11 +11,14 @@ title: Success
 Success!
 """
 
-with open("./_pages/success.md", "w") as file:
+with open("./_pages/publications.md", "w") as file:
     file.write("""---
 layout: page
-title: Success
+title: Publications
 ---
 
-Success! Now with a bonus!
+# Publications
+
+Some content
+
                 """)

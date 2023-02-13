@@ -341,7 +341,7 @@
 #link-container input:checked ~ #link-list {
 //	position: relative;
 
-	max-height: calc(var(--numpaths) * 1rem);
+	max-height: calc(var(--numpaths) * 2em + 2em);
 //	opacity: 1;
 	transition: max-height 0.3s ease;
 }
