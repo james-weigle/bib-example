@@ -13,7 +13,6 @@ Success!
 
 with open("./_pages/publications.md", "w") as file:
     file.write("""---
-permalink: /publications
 layout: page
 title: Publications
 ---
