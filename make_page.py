@@ -17,5 +17,5 @@ layout: page
 title: Success
 ---
 
-Success!
+Success! Now with a bonus!
                 """)
