@@ -1,5 +1,6 @@
 title: Bib Example
 description: Example site: making a bibtex bibliography on GitHub Pages without jekyll-scholar
+author: "James Weigle"
 
 theme: minima
 
