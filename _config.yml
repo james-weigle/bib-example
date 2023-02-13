@@ -10,11 +10,11 @@ minima:
   date_format: "%Y-%m-%d"
 
 # Minima: custom header links
-# header_pages:
-#   - _pages/ethics.md
-#   - _pages/jobs.md
-#   - _pages/archive.md
-#   - _pages/publications.md
+header_pages:
+  - _pages/ethics.md
+  - _pages/jobs.md
+  - _pages/archive.md
+  - _pages/publications.md
 
 include:
     - _pages
