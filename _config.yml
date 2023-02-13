@@ -1,10 +1,8 @@
 title: Bib Example
-description: Example site: making a bibtex bibliography on GitHub Pages without jekyll-scholar
+description: "Example site, making a bibtex bibliography on GitHub Pages without jekyll-scholar"
 author: "James Weigle"
 
 theme: minima
-
-baseurl: ""
 
 # Minima: show excerpts in the frontpage
 show_excerpts: true
