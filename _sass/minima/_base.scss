@@ -241,7 +241,8 @@ table {
     }
   }
   th, td {
-    padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
+    padding: 10px;
+
   }
   th {
     background-color: lighten($grey-color-light, 3%);
