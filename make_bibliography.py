@@ -7,6 +7,7 @@ from inspect import getmembers
 
 bibliography = { "Journal": "bibliography/journal.bib" }
 
+
 def format_author(entry):
     """Returns a string in markdown format for an article citation."""
     def first_initials(author):
@@ -63,6 +64,18 @@ def format_bibtex_entry(index, entry):
     return make_download_link(filename, string)
 
 
+
+def format_journal_article(entry):
+    """Returns a correctly cited journal article."""
+    refstring = "".join([format_author(entry),
+                         format_title(entry),
+                         format_publication(entry)])
+
+    if 'pages' in entry.fields:
+        refstring += ", "+entry.fields['pages']
+    refstring += "."
+    return refstring
+
 with open("./_pages/publications.md", "w") as file:
     file.write("""---
 layout: page
@@ -77,13 +90,9 @@ permalink: /publications
         bib_data = pybtex.database.parse_file(filepath)
         entries = reversed(list(enumerate(reversed(list(bib_data.entries.items())),start=1)))
         for i, (key, entry) in entries:
-            refstring = "".join([format_author(entry),
-                                 format_title(entry),
-                                 format_publication(entry)])
-            if 'pages' in entry.fields:
-                refstring += ", "+entry.fields['pages'] + "."
+            citation = format_journal_article(entry)
             link = format_bibtex_entry(i, entry)
-            file.write(f"| {i} | {refstring} | {link} |\n")
+            file.write(f"| {i} | {citation} | {link} |\n")
 
 # authors. [Title](google drive link). Journal volume (issue), pp. pages, year
 
