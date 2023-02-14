@@ -13,7 +13,7 @@ What this comes to is
 that **you don’t have to worry about the publications list**:
 you don’t have to edit that page,
 and you don’t have to add/commit that page.
-**All you should have to change is the BibTeX files**.
+**All you should have to change are the BibTeX files**.
 
 ## Organizing the bibliography
 
