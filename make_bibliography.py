@@ -5,6 +5,8 @@ Goal: print a list of bibliography entries.
 import pybtex.database
 from inspect import getmembers
 
+bibliography = { "Journal": "bibliography/journal.bib" }
+
 def format_author(entry):
     """Returns a string in markdown format for an article citation."""
     def first_initials(author):
@@ -24,7 +26,9 @@ def format_author(entry):
 def format_title(entry):
     """Return a string in markdown format
     with the title in quotes, linking to the URL."""
-    return f"[{entry.fields['title']}]({entry.fields['url']}). "
+    if 'url' in entry.fields:
+        return f"[{entry.fields['title']}]({entry.fields['url']}). "
+    return entry.fields['title']
 
 def format_publication(entry):
     """Return a string in markdown format with
@@ -44,7 +48,6 @@ def format_publication(entry):
 
 # "Title": "path/to/file.bib"
 
-bibliography = { "Journal": "bibliography/journal.bib" }
 
 
 def make_download_link(title, content):
