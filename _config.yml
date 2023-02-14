@@ -12,7 +12,8 @@ minima:
 
 # Minima: custom header links
 header_pages:
-  - _pages/ethics.md
+  - _pages/page-1.md
+  - _pages/page-2.md
   - _pages/publications.md
 
 include:
