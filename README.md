@@ -41,5 +41,6 @@ If you’re reusing this code, you probably have your
 own needs and preferences. Therefore,
 it might be best to scrap _my_ implementation of
 `make_bibliography.py`
-(either by replacing it with a fresh script,
-or using 
+(either by replacing it with a fresh python script,
+or by changing `githooks/pre-commit` to do something else entirely---perhaps
+using `bib2html` or `pandoc`).
