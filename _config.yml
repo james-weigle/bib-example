@@ -16,6 +16,8 @@ header_pages:
   - _pages/page-2.md
   - _pages/publications.md
 
+copyright: "Sample copyright notice."
+
 include:
     - _pages
 
