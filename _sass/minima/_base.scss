@@ -242,7 +242,6 @@ table {
   }
   th, td {
     padding: 10px;
-
   }
   th {
     background-color: lighten($grey-color-light, 3%);
@@ -251,6 +250,7 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
+    padding: 10px;
   }
 }
 
